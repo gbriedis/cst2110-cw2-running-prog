@@ -1,4 +1,3 @@
 public abstract class Venue {
-    public String name;
-
+    public String VenueName;
 }
