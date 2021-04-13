@@ -1,3 +1,10 @@
 public abstract class Venue {
-    public String VenueName;
+
+    String venueName;
+    public String type;
+
+    Venue(String venueName) {
+        this.venueName = venueName;
+    }
+
 }

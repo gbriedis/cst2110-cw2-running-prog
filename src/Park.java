@@ -1,12 +1,14 @@
 public class Park extends Venue {
 
-    private int numChangingFacilities = 5;
+    int numOfChangingFacilities;
 
-    public Park() {
-
+    Park(String venueName, int num) {
+        super(venueName);
+        this.numOfChangingFacilities = num;
+        type = "Park";
     }
 
-    public void display() {
-
+    public String toString() {
+        return "Number of Changing Facilities: [" + numOfChangingFacilities+']';
     }
 }
