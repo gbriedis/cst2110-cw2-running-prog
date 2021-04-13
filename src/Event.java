@@ -1,3 +1,5 @@
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.ArrayList;
 
 public class Event extends ArrayList {
@@ -54,4 +56,24 @@ public class Event extends ArrayList {
             System.out.println(venueName.get(0).toString());
         }
     }
+
+    // add user
+    public void addUser(int choice, String userName, int userAge) {
+        // enter half marathon
+        if(choice == 1) {
+            if(userAge >= 16) {
+                competitors.add(new Competitor(userName,userAge));
+            }
+            else {
+                System.out.println("You must be over 16 to enter half marathon");
+                return;
+            }
+        }
+
+        // enter 5km run
+        else if (choice == 2) {
+            competitors.add(new Competitor(userName, userAge));
+        }
+    }
+
 }
